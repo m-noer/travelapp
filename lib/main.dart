@@ -9,12 +9,6 @@ import 'package:flutter/rendering.dart';
 import 'app_localizations.dart';
 
 void main() {
-  developer.log('log me', name: 'my.app.category');
-  debugPrintBeginFrameBanner = true;
-  debugPrintEndFrameBanner = true;
-
-  debugPaintSizeEnabled = true;
-
   runApp(MyApp());
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
@@ -58,27 +52,6 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Travel App"),
-        leading: Icon(Icons.sort),
-      ),
-      drawer: Drawer(),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-          ),
-        ],
-      ),
       backgroundColor: Colors.grey[50],
       body: ListView(
         children: <Widget>[
